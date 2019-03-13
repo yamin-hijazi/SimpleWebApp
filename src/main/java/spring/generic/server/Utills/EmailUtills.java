@@ -13,6 +13,7 @@ public class EmailUtills {
 
     public static void sendGenericEmail(String receiver, String title, String body)
     {
+        //Added for testing purposes.
         Resource r=new ClassPathResource("mail-bean.xml");
         BeanFactory b=new XmlBeanFactory(r);
         MailClient m=(MailClient)b.getBean("mailClient");
